@@ -67,3 +67,8 @@ pip install selenium beautifulsoup4
 #### Run the Jupyter Notebook
 
 Open the Jupyter notebook and run the cells to fetch product data from the webpage and store it in products.csv.
+
+### Screenshots
+
+![](/screenshots/1.png)
+![](/screenshots/2.png)
