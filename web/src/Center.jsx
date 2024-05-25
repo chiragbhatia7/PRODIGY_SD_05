@@ -1,21 +1,9 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 
-const Center = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("https://fakestoreapi.com/products")
-      .then((response) => {
-        setProducts(response.data);
-      })
-      .catch((error) => {
-        console.error("Error fetching products:", error);
-      });
-  }, []);
+const Center = (props) => {
+  const products = props.products;
 
   return (
     <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row">
